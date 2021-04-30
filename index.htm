@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Advent+Pro|Alfa+Slab+One|Anton|Archivo+Narrow|Baloo+2|Baloo+Chettan+2|Bellota|BenchNine|Caveat|Cinzel|Comfortaa|Concert+One|Cookie|Damion|Dancing+Script|Dosis|Electrolize|Fredoka+One|Great+Vibes|Indie+Flower|Inter|Josefin+Sans|Josefin+Slab|Kaushan+Script|Lato|Lobster|Luckiest+Guy|Monoton|Montserrat|Open+Sans|Oswald|Oxanium|PT+Sans+Caption|Pacifico|Parisienne|Passion+One|Poiret+One|Poppins|Quattrocento+Sans|Raleway|Righteous|Roboto+Mono|Sacramento|Satisfy|Sen|Source+Sans+Pro|Spartan|Titillium+Web|Ubuntu|Ultra|Yellowtail&display=swap" rel="stylesheet">
+        
+    
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        
+
+    <script>
+        $(document).ready(function(){
+
+            $("#signin").click(function(){
+
+                $(".bg-modal").css("display","flex");
+                $(".bg-content").fadeIn();
+                $(".bg-content").fadeIn("slow");
+                $(".bg-content").fadeIn(3000);
+
+                $(".bg-content").css("overflow", "hidden");
+
+
+
+            });
+
+            $("#form_i1").click(function(){
+
+                $(".bg-modal").hide();
+            });
+
+
+            $("#b1").mouseover(function(){
+
+                $("#menu_i1").slideToggle(function(){
+
+                    $("#menu_i1").css("margin-left", "15px");
+                    $("#b1").css("padding-left", "0px");
+                });
+
+                
+                
+               
+            });
+
+            $("#b1").mouseleave(function(){
+
+                $("#menu_i1").slideToggle(function(){
+
+                    $("#menu_i1").css("margin-left", "15px");
+                    $("#b1").css("padding-left", "0px");
+                });
+
+            });
+
+
+            $("#b1").click(function(){
+
+                alert("Menu is about to be establish soon. Inconvenience is regreted!!");
+            });
+
+
+        });
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">                       <!--ROW1-->
+
+            <div class="col-md-12 seg1">
+                <p id="p1">TasteBUDDY</p>
+
+                <div class="account">
+                    <input type="submit" value="SignIN" id="signin">
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row">                       <!--Row2-->
+
+            <div class="bg-modal">
+                <div class="bg-content">
+
+                    <i class="fa fa-arrow-left" id="form_i1"></i>
+                    
+                    <form>
+                       
+                        <input type="email" placeholder="E-mail" required><br>
+                        <input type="password" placeholder="Password" required><br>
+                        <input type="submit" value="LogIn" id="submit1">
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-6 seg2">
+                
+
+                <div class="headtext">
+
+                    <p>Delicious Dishes nearest to your <br>location. <strong>ORDER NOW</strong></p>
+                    <p>We made fresh and healthy <br>Salads from different ingredients</p>
+
+                </div>
+
+                <button id="b1">Menu<i class="fa fa-arrow-right" id="menu_i1"></i></button>
+
+                <div class="dish">
+
+                    <section>
+                        <div id="image1"></div>
+                        <h4>Cheesy Mutter</h4>
+                        <h6>Ashoka Restaurant</h6>
+                        <p>$ 40</p>
+
+                        <a><button><i class="fa fa-plus"></i></button></a>
+
+                    </section>
+                    <section>
+                        <div id="image2"></div>
+                        <h4>Omlette Pizza</h4>
+                        <h6>Arden Restaurant</h6>
+                        <p>$ 60</p>
+
+                        <a><button><i class="fa fa-plus"></i></button></a>
+                    </section>
+
+                </div>
+
+            </div>
+    
+            <div class="col-md-6 seg2_2">
+               
+                <div class="headtext2">
+                    <h2>Start Your Day Now!</h2>
+                    <p>Whatever the season and condition available to you anytime anywhere in India. We have gathered real blend of spices for our recipes</p>
+
+                </div>
+
+               
+    
+            </div>
+    
+
+
+        </div>
+
+
+        <div class="row">               <!--Additional ROW-->
+
+            
+
+            <div class="col-md-12 feedback_seg">
+                <hr>
+                <h1>Our Customers </h1>
+               
+
+                <div class="col-md-3 feedback_block">
+                    
+                    <div id="statement">
+                        <p>We got best deals everytime we opt here. We have sometimes additional benefits in the form of deserts or beverage.</p>
+                    </div>
+
+                    <section></section>
+                    <h5>Anurag P. Sharma</h5>
+                    <label>Mumbai</label>
+
+                </div>
+
+                <div class="col-md-3 feedback_block">
+                    
+                    <div id="statement">
+                        <p>Everytime i ordered the food, i got the meal on time and everthing else was as good as expected.</p>
+                    </div>
+
+                    <section></section>
+                    <h5>Vikas Raj</h5>
+                    <label>Bangalore</label>
+
+                </div>
+
+                <div class="col-md-3 feedback_block">
+                    
+                    <div id="statement">
+                        <p>Excellent! I found very impressive towards your services, specially on quality and quantity as well.</p>
+                    </div>
+
+                    <section></section>
+                    <h5>Aditi Reddy</h5>
+                    <label>Hyderabad</label>
+
+                </div>
+                
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <div class="row">               <!--Row3-->
+
+            <div class="col-md-12 seg3">
+
+                <div class="col-md-10 block1">
+
+                    <button>Visit</button>
+                    <p>Taste the taste of India</p>
+                </div>
+
+                <div class="col-md-12 block2">
+                    <div>
+                        <p>300+</p>
+                        <span>Restaurant Partners</span>
+                    </div>
+                    <div>
+                        <p>100+</p>
+                        <span>Cities</span>
+                    </div>
+                    <div>
+                        <p>10K+</p>
+                        <span>Customers</span>
+                    </div>
+
+                </div>
+            
+                
+                
+            </div>
+
+        </div>
+
+        <div class="row">               <!--Row4-->
+
+            <div class="col-md-6 seg4">
+
+                <div class="os">
+                    <a><i class="fa fa-android"></i></a>
+                    <a><i class="fa fa-windows"></i></a>
+
+                </div>
+
+                <!--
+                <img src="pizza1.png" id="footer_i1">
+                -->
+
+                <div class="location">
+
+                    <i class="fa fa-map-marker" aria-hidden="true"><label>26, Arc Society</label></i><br>
+                    <i class="fa fa-building"><label>Bangalore, Karnataka</label></i><br>
+                    <i class="fa fa-mobile"><label>+91-7894869342</label></i>
+
+                </div>
+                
+            </div>
+            <div class="col-md-6 seg4_2">
+                
+
+                
+                
+                <div class="services">
+                    <h2>SERVICES</h2>
+                    <ul>
+                        <li>Availability</li>
+                        <li>Standardisation</li>
+                        <li>Quality Assured</li>
+                        <li>FSSCAI Registered</li>
+                        <li>Safety</li>
+
+                    </ul>
+
+                </div>
+                <div class="product">
+
+                </div>
+
+                <div class="social">
+                    <a><i class="fa fa-facebook"></i></a>
+                    <a><i class="fa fa-twitter"></i></a>
+                    <a><i class="fa fa-instagram"></i></a>
+                    <a><i class="fa fa-youtube-play"></i></a>
+                    
+
+                </div>
+
+                <p id="copyright">Copyright inc.</p>
+                
+            </div>
+
+        </div>
+
+        
+
+    </div>
+
+
+    
+</body>
+</html>
